@@ -5,6 +5,7 @@
   "main": "server_index.js",
   "type": "module",
   "scripts": {
+    "start": "server_index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
