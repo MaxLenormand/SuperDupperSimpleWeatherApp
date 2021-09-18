@@ -6,16 +6,19 @@ import express from "express";
 import DataStore from "nedb";
 import fetch from 'node-fetch';
 import dotenv from 'dotenv';
+import path from 'path';
+const __dirname = path.resolve();
 dotenv.config();
 import { all } from "proxy-addr";
 
 
 // Setting up express
 const app = express();
-const port = process.env.PORT;
-app.listen(port, () => console.log(`listening at ${port}`));
 app.use(express.static('public'));
 app.use(express.json({limit: '1mb'}));
+
+const port = process.env.PORT || 3000;
+app.listen(port, () => console.log(`listening at ${port}`));
 
 // Setting up Database
 const database = new DataStore('weather_db.db');
@@ -23,6 +26,10 @@ database.loadDatabase();
 
 // Loading API Key from dotenv
 const APIkey = process.env.WEATHER_API_KEY;
+
+app.get("/", (req, resp) => {
+    resp.sendFile(path.join(__dirname, "public", "home_index.html"));
+});
 
 // Post Endpoints
 app.post("/location", (req, resp) => {
