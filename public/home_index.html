@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Weather App</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    </head>
+    <body>
+        <header>
+            <div class="container">
+                <div id="topDiv">
+                    <h1>Welcome to my Weather App!</h1>
+                </div>
+                <nav>
+                    <ul>
+                        <li class="current"><a href="/home_index.html">Home</a></li>
+                        <li><a href="/historical/historical.html">Historical Data</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <section id="UserInput">
+                <div class="container">
+                    <h1>Great to see you back!</h1>
+
+                    <br>
+                    <div index="UserInput">
+                        <button id="GeoBtn">Get Weather from your Location</button>
+                    </div>
+                </div>
+            </section>
+
+            <section id="UserLocation">
+                <div class="container">
+                    <h1>Your data</h1>
+
+                    <p>
+                        Latitude: <span id="Latitude">???</span> &deg;
+                        <br>
+                        Longitude: <span id="Longitude">???</span> &deg;
+                        <br>
+                        Current Temperature: <span id="Temperature">???</span> &deg;C
+                        <br>
+                        Air Quality in Nearest City (<span id="NearestCity"> ??? </span>): <span id="AirQuality">???</span>
+                    </p>
+                    
+                </div>
+            </section>
+        </header>
+
+        <script src="/home_script.js"></script>
+    </body>
+
+</html>

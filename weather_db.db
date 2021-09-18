@@ -1,0 +1,4 @@
+{"lat":"52.03","lon":"4.32","temps":{"temp":292.84,"feels_like":290.91,"temp_min":288.66,"temp_max":292.54,"pressure":1017,"humidity":86},"FirstCityAirQuality":-1,"recieveTime":1631954565283,"_id":"1TOfdXCoprLBU4Wl"}
+{"lat":"52.08","lon":"4.31","temps":{"temp":292.46,"feels_like":292.51,"temp_min":290.31,"temp_max":294.21,"pressure":1017,"humidity":79},"FirstCityAirQuality":-1,"recieveTime":1631957657541,"_id":"OaPUxMvT4P5VIriw"}
+{"lat":"52.08","lon":"4.31","temps":{"temp":292.44,"feels_like":292.49,"temp_min":290.31,"temp_max":294.21,"pressure":1017,"humidity":79},"FirstCityAirQuality":38.26,"recieveTime":1631957981989,"_id":"db3mHET5yfCWHhSz"}
+{"lat":"52.08","lon":"4.31","temps":{"temp":292.86,"feels_like":292.92,"temp_min":290.31,"temp_max":295.32,"pressure":1017,"humidity":78},"FirstCityAirQuality":38.05,"recieveTime":1631958741188,"_id":"O8yAFjSTW7evI7hy"}
